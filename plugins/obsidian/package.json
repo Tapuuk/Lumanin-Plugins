@@ -1,0 +1,24 @@
+{
+  "name": "obsidian",
+  "title": "Obsidian",
+  "description": "Your Obsidian vaults and notes: open a note, jump to a vault, or create a note without leaving the launcher.",
+  "author": "tapuuk",
+  "license": "MIT",
+  "categories": ["Productivity"],
+  "commands": [
+    {
+      "name": "search-obsidian",
+      "title": "Search Obsidian",
+      "description": "Notes and vaults from your Obsidian install; Enter opens one in Obsidian.",
+      "mode": "view",
+      "icon": "search:obsidian",
+      "lumanin": {
+        "categories": [
+          { "id": "notes", "title": "Notes" },
+          { "id": "vaults", "title": "Vaults" }
+        ]
+      }
+    }
+  ],
+  "preferences": []
+}

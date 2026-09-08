@@ -1,0 +1,21 @@
+{
+  "name": "media-controls",
+  "title": "Media Controls",
+  "description": "Every running media player on one list: see what is playing, play or pause it, skip tracks.",
+  "author": "tapuuk",
+  "license": "MIT",
+  "categories": ["Media"],
+  "commands": [
+    {
+      "name": "search-players",
+      "title": "Search Media Players",
+      "description": "Running players over MPRIS - Spotify, VLC, mpv, browsers; Enter toggles play and pause.",
+      "mode": "view",
+      "icon": "search:multimedia-player,applications-multimedia",
+      "lumanin": {
+        "categories": [{ "id": "players", "title": "Players" }]
+      }
+    }
+  ],
+  "preferences": []
+}

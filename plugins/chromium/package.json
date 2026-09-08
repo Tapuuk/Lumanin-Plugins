@@ -1,0 +1,49 @@
+{
+  "name": "chromium",
+  "title": "Chromium",
+  "description": "Search your Chromium bookmarks and history and open them in the browser.",
+  "author": "tapuuk",
+  "license": "MIT",
+  "categories": [
+    "Web"
+  ],
+  "commands": [
+    {
+      "name": "search-chromium",
+      "title": "Search Chromium",
+      "description": "Bookmarks and recent history from your profile; Enter opens the page.",
+      "mode": "view",
+      "icon": "search:chromium,google-chrome",
+      "lumanin": {
+        "categories": [
+          {
+            "id": "bookmarks",
+            "title": "Bookmarks"
+          },
+          {
+            "id": "history",
+            "title": "History"
+          }
+        ]
+      }
+    }
+  ],
+  "preferences": [
+    {
+      "name": "profileDir",
+      "title": "Profile Directory",
+      "description": "The browser profile to read. Google Chrome lives at ~/.config/google-chrome/Default, Brave under ~/.config/BraveSoftware.",
+      "type": "textfield",
+      "required": false,
+      "default": "~/.config/chromium/Default"
+    },
+    {
+      "name": "browserCommand",
+      "title": "Browser Command",
+      "description": "Command used to open a page. Leave empty to pick the browser from the profile directory.",
+      "type": "textfield",
+      "required": false,
+      "default": ""
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "ssh",
+  "title": "SSH Hosts",
+  "description": "The hosts from your ssh config: connect in a terminal or copy user@host.",
+  "author": "tapuuk",
+  "license": "MIT",
+  "categories": ["Developer Tools"],
+  "commands": [
+    {
+      "name": "search-hosts",
+      "title": "Search SSH Hosts",
+      "description": "Hosts from ~/.ssh/config; Enter connects in your terminal.",
+      "mode": "view",
+      "icon": "search:network-server,utilities-terminal",
+      "lumanin": {
+        "categories": [{ "id": "hosts", "title": "Hosts" }]
+      }
+    }
+  ],
+  "preferences": [
+    {
+      "name": "configPath",
+      "title": "SSH Config File",
+      "description": "Path of the ssh config to read hosts from.",
+      "type": "textfield",
+      "required": false,
+      "default": "~/.ssh/config"
+    },
+    {
+      "name": "terminal",
+      "title": "Terminal Command",
+      "description": "Command used to open a terminal for the connection. Leave empty to use $TERMINAL, then xdg-terminal-exec.",
+      "type": "textfield",
+      "required": false,
+      "default": ""
+    }
+  ]
+}

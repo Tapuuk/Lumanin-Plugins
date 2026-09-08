@@ -1,0 +1,33 @@
+{
+  "name": "vscode",
+  "title": "VS Code",
+  "description": "Your recent VS Code folders and workspaces: open one, open it in a new window, or copy its path.",
+  "author": "tapuuk",
+  "license": "MIT",
+  "categories": ["Developer Tools"],
+  "commands": [
+    {
+      "name": "search-vscode",
+      "title": "Search VS Code",
+      "description": "Recent folders and workspaces from VS Code, VSCodium, Code - OSS and Cursor, including Flatpak and Snap installs.",
+      "mode": "view",
+      "icon": "search:com.visualstudio.code.oss,visual-studio-code",
+      "lumanin": {
+        "categories": [
+          { "id": "folders", "title": "Folders" },
+          { "id": "workspaces", "title": "Workspaces" }
+        ]
+      }
+    }
+  ],
+  "preferences": [
+    {
+      "name": "codeBinary",
+      "title": "VS Code Executable",
+      "description": "Leave empty to use each editor's own command (code, codium, code-insiders, cursor, flatpak run). Set it to override all of them.",
+      "type": "textfield",
+      "required": false,
+      "default": ""
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "$schema": "./plugins.schema.json",
+  "plugins": [
+    {
+      "name": "1password",
+      "title": "1Password",
+      "description": "Search your 1Password vault and copy usernames, passwords and one-time codes via the op CLI.",
+      "author": "tapuuk",
+      "directory": "1password"
+    },
+    {
+      "name": "bitwarden",
+      "title": "Bitwarden",
+      "description": "Search your unlocked Bitwarden vault and copy usernames, passwords and one-time codes.",
+      "author": "tapuuk",
+      "directory": "bitwarden"
+    },
+    {
+      "name": "chromium",
+      "title": "Chromium",
+      "description": "Search your Chromium bookmarks and history and open them in the browser.",
+      "author": "tapuuk",
+      "directory": "chromium"
+    },
+    {
+      "name": "docker",
+      "title": "Docker",
+      "description": "Your Docker containers: start and stop them, follow logs, or drop into a shell.",
+      "author": "tapuuk",
+      "directory": "docker"
+    },
+    {
+      "name": "firefox",
+      "title": "Firefox",
+      "description": "Search your Firefox bookmarks and browsing history and open them in Firefox.",
+      "author": "tapuuk",
+      "directory": "firefox"
+    },
+    {
+      "name": "github",
+      "title": "GitHub",
+      "description": "Your GitHub through the gh CLI: open pull requests, assigned issues and your repositories.",
+      "author": "tapuuk",
+      "directory": "github"
+    },
+    {
+      "name": "godot",
+      "title": "Godot Engine",
+      "description": "Your Godot projects, from the launcher: open one in the editor, run it, or read what is inside it.",
+      "author": "tapuuk",
+      "directory": "godot"
+    },
+    {
+      "name": "localsend",
+      "title": "LocalSend",
+      "description": "Send files or text to LocalSend devices on your network, and open what LocalSend received.",
+      "author": "tapuuk",
+      "directory": "localsend"
+    },
+    {
+      "name": "media-controls",
+      "title": "Media Controls",
+      "description": "Every running media player on one list: see what is playing, play or pause it, skip tracks.",
+      "author": "tapuuk",
+      "directory": "media-controls"
+    },
+    {
+      "name": "obsidian",
+      "title": "Obsidian",
+      "description": "Your Obsidian vaults and notes: open a note, jump to a vault, or create a note without leaving the launcher.",
+      "author": "tapuuk",
+      "directory": "obsidian"
+    },
+    {
+      "name": "ssh",
+      "title": "SSH Hosts",
+      "description": "The hosts from your ssh config: connect in a terminal or copy user@host.",
+      "author": "tapuuk",
+      "directory": "ssh"
+    },
+    {
+      "name": "steam",
+      "title": "Steam",
+      "description": "Your installed Steam games, with playtime, size and cover art. Reads Steam's own files on this machine - no network, no account, no API key.",
+      "author": "tapuuk",
+      "directory": "steam"
+    },
+    {
+      "name": "tailscale",
+      "title": "Tailscale",
+      "description": "The devices on your tailnet: copy their IPs, SSH to one, or route through an exit node.",
+      "author": "tapuuk",
+      "directory": "tailscale"
+    },
+    {
+      "name": "tmux",
+      "title": "tmux",
+      "description": "Your tmux sessions: attach in a terminal, create one, or kill one.",
+      "author": "tapuuk",
+      "directory": "tmux"
+    },
+    {
+      "name": "vscode",
+      "title": "VS Code",
+      "description": "Your recent VS Code folders and workspaces: open one, open it in a new window, or copy its path.",
+      "author": "tapuuk",
+      "directory": "vscode"
+    }
+  ]
+}

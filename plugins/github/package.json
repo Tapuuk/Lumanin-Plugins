@@ -1,0 +1,34 @@
+{
+  "name": "github",
+  "title": "GitHub",
+  "description": "Your GitHub through the gh CLI: open pull requests, assigned issues and your repositories.",
+  "author": "tapuuk",
+  "license": "MIT",
+  "categories": ["Developer Tools"],
+  "commands": [
+    {
+      "name": "search-github",
+      "title": "Search GitHub",
+      "description": "Your open pull requests, assigned issues and repositories via gh; Enter opens one in the browser.",
+      "mode": "view",
+      "icon": "search:github,github-desktop",
+      "lumanin": {
+        "categories": [
+          { "id": "prs", "title": "My Pull Requests" },
+          { "id": "issues", "title": "Assigned Issues" },
+          { "id": "repos", "title": "My Repositories" }
+        ]
+      }
+    }
+  ],
+  "preferences": [
+    {
+      "name": "ghBinary",
+      "title": "gh Executable",
+      "description": "Command or absolute path of the GitHub CLI. Sign in once with gh auth login.",
+      "type": "textfield",
+      "required": false,
+      "default": "gh"
+    }
+  ]
+}

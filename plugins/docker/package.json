@@ -1,0 +1,41 @@
+{
+  "name": "docker",
+  "title": "Docker",
+  "description": "Your Docker containers: start and stop them, follow logs, or drop into a shell.",
+  "author": "tapuuk",
+  "license": "MIT",
+  "categories": ["Developer Tools"],
+  "commands": [
+    {
+      "name": "search-docker",
+      "title": "Search Docker",
+      "description": "Running and stopped containers; Enter starts or stops, logs and shells open in your terminal.",
+      "mode": "view",
+      "icon": "search:docker",
+      "lumanin": {
+        "categories": [
+          { "id": "running", "title": "Running" },
+          { "id": "all", "title": "All Containers" }
+        ]
+      }
+    }
+  ],
+  "preferences": [
+    {
+      "name": "dockerBinary",
+      "title": "Docker Executable",
+      "description": "Command or absolute path of the docker CLI. Try podman for a drop-in swap.",
+      "type": "textfield",
+      "required": false,
+      "default": "docker"
+    },
+    {
+      "name": "terminal",
+      "title": "Terminal Command",
+      "description": "Command used to open a terminal for logs and shells. Leave empty to use $TERMINAL, then xdg-terminal-exec.",
+      "type": "textfield",
+      "required": false,
+      "default": ""
+    }
+  ]
+}

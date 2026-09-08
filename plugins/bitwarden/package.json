@@ -1,0 +1,42 @@
+{
+  "name": "bitwarden",
+  "title": "Bitwarden",
+  "description": "Search your unlocked Bitwarden vault and copy usernames, passwords and one-time codes.",
+  "author": "tapuuk",
+  "license": "MIT",
+  "categories": ["Security"],
+  "commands": [
+    {
+      "name": "search-bitwarden",
+      "title": "Search Bitwarden",
+      "description": "Items from the bw CLI; copied secrets clear from the clipboard after 30 seconds.",
+      "mode": "view",
+      "icon": "search:bitwarden",
+      "lumanin": {
+        "categories": [
+          { "id": "logins", "title": "Logins" },
+          { "id": "cards", "title": "Cards" },
+          { "id": "notes", "title": "Secure Notes" }
+        ]
+      }
+    }
+  ],
+  "preferences": [
+    {
+      "name": "bwBinary",
+      "title": "bw Executable",
+      "description": "Command or absolute path of the Bitwarden CLI.",
+      "type": "textfield",
+      "required": false,
+      "default": "bw"
+    },
+    {
+      "name": "sessionToken",
+      "title": "Session Token",
+      "description": "Output of bw unlock --raw. Stays on this machine; delete it here to lock the plugin out again. Paste it again after updating the plugin.",
+      "type": "password",
+      "required": false,
+      "default": ""
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "1password",
+  "title": "1Password",
+  "description": "Search your 1Password vault and copy usernames, passwords and one-time codes via the op CLI.",
+  "author": "tapuuk",
+  "license": "MIT",
+  "categories": ["Security"],
+  "commands": [
+    {
+      "name": "search-1password",
+      "title": "Search 1Password",
+      "description": "Items from the op CLI; copied secrets clear from the clipboard after 30 seconds.",
+      "mode": "view",
+      "icon": "search:1password",
+      "lumanin": {
+        "categories": [
+          { "id": "logins", "title": "Logins" },
+          { "id": "credit-cards", "title": "Credit Cards" },
+          { "id": "identities", "title": "Identities" }
+        ]
+      }
+    }
+  ],
+  "preferences": [
+    {
+      "name": "opBinary",
+      "title": "op Executable",
+      "description": "Command or absolute path of the 1Password CLI. Turn on the desktop app's CLI integration under Settings, Developer.",
+      "type": "textfield",
+      "required": false,
+      "default": "op"
+    },
+    {
+      "name": "account",
+      "title": "Account",
+      "description": "Account shorthand, sign-in address or account ID when op has more than one. See op account list. Leave empty for a single account.",
+      "type": "textfield",
+      "required": false,
+      "default": ""
+    }
+  ]
+}

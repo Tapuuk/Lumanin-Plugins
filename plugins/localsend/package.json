@@ -1,0 +1,41 @@
+{
+  "name": "localsend",
+  "title": "LocalSend",
+  "description": "Send files or text to LocalSend devices on your network, and open what LocalSend received.",
+  "author": "tapuuk",
+  "license": "MIT",
+  "categories": ["Communication"],
+  "commands": [
+    {
+      "name": "search-localsend",
+      "title": "Search LocalSend",
+      "description": "Devices found on the LAN and files LocalSend received; Enter sends to a device or opens a received file.",
+      "mode": "view",
+      "icon": "search:localsend,network-workgroup",
+      "lumanin": {
+        "categories": [
+          { "id": "devices", "title": "Devices" },
+          { "id": "received", "title": "Received" }
+        ]
+      }
+    }
+  ],
+  "preferences": [
+    {
+      "name": "alias",
+      "title": "Device Name",
+      "description": "Name other devices see when you send. Leave empty to use the name set in LocalSend, then the hostname.",
+      "type": "textfield",
+      "required": false,
+      "default": ""
+    },
+    {
+      "name": "scanInterfaces",
+      "title": "Scan Interfaces",
+      "description": "Comma-separated network interface names the device scan is limited to (for example eth0). Empty means every ordinary LAN interface is scanned automatically, never a tunnel or a VPN.",
+      "type": "textfield",
+      "required": false,
+      "default": ""
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "tailscale",
+  "title": "Tailscale",
+  "description": "The devices on your tailnet: copy their IPs, SSH to one, or route through an exit node.",
+  "author": "tapuuk",
+  "license": "MIT",
+  "categories": ["Network"],
+  "commands": [
+    {
+      "name": "search-tailscale",
+      "title": "Search Tailscale",
+      "description": "Devices from tailscale status; Enter copies the device IP. Exit-node changes need sudo tailscale set --operator=$USER once.",
+      "mode": "view",
+      "icon": "search:tailscale,network-vpn",
+      "lumanin": {
+        "categories": [{ "id": "devices", "title": "Devices" }]
+      }
+    }
+  ],
+  "preferences": [
+    {
+      "name": "tailscaleBinary",
+      "title": "Tailscale Executable",
+      "description": "Command or absolute path of the tailscale CLI.",
+      "type": "textfield",
+      "required": false,
+      "default": "tailscale"
+    },
+    {
+      "name": "terminal",
+      "title": "Terminal Command",
+      "description": "Command used to open a terminal for SSH. Leave empty to use $TERMINAL, then xdg-terminal-exec.",
+      "type": "textfield",
+      "required": false,
+      "default": ""
+    }
+  ]
+}

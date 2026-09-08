@@ -1,0 +1,23 @@
+{
+  "name": "steam",
+  "title": "Steam",
+  "description": "Your installed Steam games, with playtime, size and cover art. Reads Steam's own files on this machine - no network, no account, no API key.",
+  "author": "tapuuk",
+  "license": "MIT",
+  "categories": ["Applications"],
+  "commands": [
+    {
+      "name": "search-steam",
+      "title": "Search Steam",
+      "description": "Installed games and tools. Enter launches; Ctrl+K sorts by name, recently played or hours.",
+      "mode": "view",
+      "icon": "search:steam,com.valvesoftware.Steam",
+      "lumanin": {
+        "categories": [
+          { "id": "games", "title": "Games" },
+          { "id": "tools", "title": "Tools & Runtimes" }
+        ]
+      }
+    }
+  ]
+}

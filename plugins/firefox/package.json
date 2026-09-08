@@ -1,0 +1,28 @@
+{
+  "name": "firefox",
+  "title": "Firefox",
+  "description": "Search your Firefox bookmarks and browsing history and open them in Firefox.",
+  "author": "tapuuk",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "search",
+      "title": "Search Firefox",
+      "description": "Search your bookmarks and history; Enter opens the page in Firefox.",
+      "mode": "view",
+      "icon": "search:firefox",
+      "lumanin": {
+        "categories": [
+          {
+            "id": "bookmarks",
+            "title": "Bookmarks"
+          },
+          {
+            "id": "history",
+            "title": "History"
+          }
+        ]
+      }
+    }
+  ]
+}

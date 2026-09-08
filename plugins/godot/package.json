@@ -1,0 +1,40 @@
+{
+  "name": "godot",
+  "title": "Godot Engine",
+  "description": "Your Godot projects, from the launcher: open one in the editor, run it, or read what is inside it.",
+  "author": "tapuuk",
+  "license": "MIT",
+  "categories": ["Developer Tools"],
+  "commands": [
+    {
+      "name": "projects",
+      "title": "Search Godot",
+      "description": "Your Godot projects with their engine version and renderer; Enter opens one in the editor.",
+      "mode": "view",
+      "icon": "search:godot,godot-mono",
+      "lumanin": {
+        "categories": [
+          { "id": "projects", "title": "All Projects" },
+          { "id": "favorites", "title": "Favorites" }
+        ]
+      }
+    }
+  ],
+  "preferences": [
+    {
+      "name": "godotBinary",
+      "title": "Godot Executable",
+      "description": "Command or absolute path used to open and run projects. Try godot4 or a full path if godot is not on your PATH.",
+      "type": "textfield",
+      "required": false,
+      "default": "godot"
+    },
+    {
+      "name": "extraProjectsDir",
+      "title": "Also Scan Folder",
+      "description": "Optional. A folder to scan two levels deep for project.godot files that are not in Godot's own project list.",
+      "type": "directory",
+      "required": false
+    }
+  ]
+}

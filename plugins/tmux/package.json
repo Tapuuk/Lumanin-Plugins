@@ -1,0 +1,41 @@
+{
+  "name": "tmux",
+  "title": "tmux",
+  "description": "Your tmux sessions: attach in a terminal, create one, or kill one.",
+  "author": "tapuuk",
+  "license": "MIT",
+  "categories": ["Developer Tools"],
+  "commands": [
+    {
+      "name": "search-tmux",
+      "title": "Search tmux",
+      "description": "Sessions and windows from the running tmux server; Enter attaches in your terminal.",
+      "mode": "view",
+      "icon": "search:tmux,utilities-terminal",
+      "lumanin": {
+        "categories": [
+          { "id": "sessions", "title": "Sessions" },
+          { "id": "windows", "title": "Windows" }
+        ]
+      }
+    }
+  ],
+  "preferences": [
+    {
+      "name": "tmuxBinary",
+      "title": "tmux Executable",
+      "description": "Command or absolute path of tmux.",
+      "type": "textfield",
+      "required": false,
+      "default": "tmux"
+    },
+    {
+      "name": "terminal",
+      "title": "Terminal Command",
+      "description": "Command used to open a terminal for attaching. Leave empty to use $TERMINAL, then xdg-terminal-exec.",
+      "type": "textfield",
+      "required": false,
+      "default": ""
+    }
+  ]
+}

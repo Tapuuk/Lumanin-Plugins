@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lumanin plugin index",
+  "type": "object",
+  "required": ["plugins"],
+  "properties": {
+    "plugins": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "title", "description", "author", "directory"],
+        "properties": {
+          "name": { "type": "string", "description": "The manifest name, unique in this index" },
+          "title": { "type": "string", "description": "What the launcher shows" },
+          "description": { "type": "string" },
+          "author": { "type": "string" },
+          "directory": { "type": "string", "description": "Folder under plugins/, e.g. \"steam\"" }
+        }
+      }
+    }
+  }
+}
